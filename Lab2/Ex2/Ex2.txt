@@ -1,0 +1,55 @@
+Obtineti drepturi administative - enable
+Aflati numele/numărul fiecărui port - show ip interface brief
+Aflati adresa MAC a unei statii - Statie -> FastEthernet0 -> MAC Address
+Afișați tabela de comutare - show mac-address-table
+
+
+Trimiteți un pachet de la PC0 la PC1.
+
+Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0090.0c1a.03de    DYNAMIC     Fa3/1
+   1    00e0.8f27.5871    DYNAMIC     Fa0/1
+
+
+Trimiteți un pachet de la PC1 la PC2.
+
+Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    000b.bed9.c904    DYNAMIC     Fa1/1
+   1    0090.0c1a.03de    DYNAMIC     Fa3/1
+   1    00e0.8f27.5871    DYNAMIC     Fa0/1
+
+
+Trimiteți un pachet de la PC2 la PC3.
+
+Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    000b.bed9.c904    DYNAMIC     Fa1/1
+   1    0060.70ca.83cd    DYNAMIC     Fa2/1
+   1    0090.0c1a.03de    DYNAMIC     Fa3/1
+   1    00e0.8f27.5871    DYNAMIC     Fa0/1
+
+
+
+Curățați tabela de comutare - clear mac-address-table
+Intrați în modul Simulation și trimiteți un pachet de la PC1 la PC3. Ce observați? 
+Trebuie sa se realizeze mapare deoarece tabela de rutare a fost golita 
+
+
+Mai trimiteți încă un pachet de la PC1 la PC3. De ce s-a comportat diferit de data aceasta.
+Deoarece se cunoasc adresele mac de la pachetul trimis anterior.
+
+

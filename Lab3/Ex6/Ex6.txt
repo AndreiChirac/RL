@@ -1,0 +1,23 @@
+Câte adrese asignabile (care pot fi asociate unei stații) se găsesc într-o rețea cu masca /23?
+32 - 23 = 9 
+adrese asignabile = 512 - 2 = 510
+
+Câți biți sunt necesari pentru partea de subrețea dacă dorim să creăm 7 subrețele cu cât mai multe stații?
+7 -> 3 biti /23 + 3 = 26 => 32 - 26 = 6 => 64 - 2 = 62 adrese asignabile 
+
+Câți biți sunt necesari pentru partea de stație dacă dorim să creăm cât mai multe rețele cu 7 stații?
+7 statii  + 2 = 9 < 2 ^ 4 = > 32 - x = 4 => x = 28 => subrețelele vor avea masca /28 => /23 + x = /28 => 5 biti
+
+Pornim de la o rețea /22. Care va fi masca noilor subrețele dacă dorim să creăm 6 subrețele de dimensiune egală cu cât mai multe stații?
+6 subrețele => 3 biti => subrețelele vor avea masca /22 + 3 biti = /25
+
+Pornim de la o rețea /22. Care va fi masca noilor subrețele dacă dorim să creăm cât mai multe subrețele cu 27 de stații?
+27 de stații + 2  = 29 < 2^5 => 32 - 5 = subrețelele vor avea masca /27
+
+Dați exemplu de două măști de (sub)rețea pentru care adresa 78.78.78.159 este adresă de broadcast și două măști de (sub)rețea pentru care adresa 78.78.78.159 este adresă de stație.
+?????????????????????
+
+
+78.78.010011|10.10011111/27 -> /32
+
+78.78.78.159 

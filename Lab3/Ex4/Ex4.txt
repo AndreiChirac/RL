@@ -1,0 +1,20 @@
+Câte adrese asignabile se găsesc în rețeaua 10.10.0.0/16?
+32 - 16 = 16 biti
+adrese asignabile 65534
+
+Câte adrese asignabile se găsesc în rețeaua 15.16.192.0/20?
+32 - 20 = 12 biti
+adrese asignabile 4094
+
+Câte adrese asignabile se găsesc în rețeaua 1.2.3.4/30?
+32 - 30 = 2 biti
+adrese asignabile 2
+
+Care este masca de rețea a celei mai mici rețele care să cuprindă 25 de adrese asignabile?
+25 + 2 < 2^5 => 5 biti => 32 - x = 5 => x = 27
+
+Care este masca de rețea a celei mai mici rețele care să cuprindă 62 de adrese asignabile?
+62 + 2 < 2^6 => 6 biti => 32 - x = 6 => x = 26
+
+Care este masca de rețea a celei mai mici rețele care să cuprindă 127 de adrese asignabile?
+127 + 2 < 2^9 => 9 biti => 32 - x = 9 => x = 23

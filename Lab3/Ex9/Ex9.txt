@@ -1,0 +1,16 @@
+Să presupunem că un institut primește un spațiu 17.18.19.0/24. Decizia organizatorică dictează ca acel spațiu să fie împărțit în trei subrețele corespunzătoare pentru trei departamente:
+A: o subrețea cu un număr de 100 de stații
+B: o subrețea cu 60 de stații
+C: o subrețea cu 50 de stații
+Când facem subnetting folosind VLSM, sortăm în ordine descrescătoare subrețelele după numărul de stații. Pornim de la subrețeaua cea mai mare și apoi continuăm, pas cu pas, la rețelele mai mici.
+Prima subrețea are 100 de stații, deci are nevoie de 7 biți pentru partea de host, adică de o mască /25. Împărțim rețeaua mare în două subrețele:
+17.18.19.0/25
+17.18.19.128/25
+Prima subrețea o alocăm primul departament: A - 17.18.19.0/25.
+A doua subrețea (17.18.19.128/25) o împărțim în continuare.
+Trebuie să folosim spațiul rămas pentru celelalte două subrețele (B și C) cu câte 60, respectiv 50 de stații.
+Avem nevoie de 6 biți pentru partea de host a fiecărei subrețele, adică de o mască /26. Împărțim noua subrețea în două subrețele:
+17.18.19.128/26
+17.18.19.192/26
+Alocăm fiecare dintre cele două subrețele rezultate celor două departamente: B - 17.18.19.128/26 și C - 17.18.19.192/26.
+Întrucât spațiul inițial a fost împărțit în subrețele cu mască diferită, numim acest process Variable Length Subnet Mask (VLSM).

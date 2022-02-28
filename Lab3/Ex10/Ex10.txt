@@ -1,0 +1,15 @@
+A: o subrețea cu un număr de 54 de stații
+B: o subrețea cu 27 de stații
+C: o subrețea cu 19 de stații
+
+12.13.14.128/25
+
+54 de stații -> 2^6 => 6 biti => masca de 32 - 6 = 26
+
+1. 12.13.14.128/26
+2. 12.13.14.192/26
+
+27 de stații -> 2^5 => 5 biti => masca de 32 - 5 = 27
+
+1. 12.13.14.192/27
+2. 12.13.14.224/27

@@ -1,0 +1,6 @@
+Switch -> Trimite direct -> unicast 
+Hub -> multicast/broadcast ??
+
+The key difference between broadcast and multicast is that in the broadcast the packet is delivered to all the host connected to the network whereas, in multicast packet is delivered to intended recipients only.
+
+OSI -> Switch -> L2 || Hub -> L1

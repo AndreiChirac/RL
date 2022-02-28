@@ -1,0 +1,23 @@
+Vom realiza subnetarea rețelei 78.78.32.0/22 în 4 subrețele
+În forma binară hibridă, adresa rețelei mari este 78.78.001000|00.00000000/22. Am folosit caracterul | (pipe) pentru a separa partea de rețea de partea de host.
+Avem 4 subrețele deci avem nevoie de 2 biți suplimentari pentru indicarea rețelei: 00, 01, 10, 11. Înseamnă că subrețelele vor avea masca /22 + 2 biți =/24. Adică vor avea 28-2 = 254 stații fiecare.
+Cele 4 subrețele vor avea, respectiv adresele:
+78.78.00100000.00000000/24 = 78.78.32.0/24
+78.78.00100001.00000000/24 = 78.78.33.0/24
+78.78.00100010.00000000/24 = 78.78.34.0/24
+78.78.00100011.00000000/24 = 78.78.35.0/24
+Adresa de broadcast a fiecărei subrețele va fi, respectiv:
+78.78.00100000.11111111/24 = 78.78.32.255/24
+78.78.00100001.11111111/24 = 78.78.33.255/24
+78.78.00100010.11111111/24 = 78.78.34.255/24
+78.78.00100011.11111111/24 = 78.78.35.255/24
+Prima adresă asignabilă din cadrul fiecărei subrețele va fi, respectiv:
+78.78.00100000.00000001/24 = 78.78.32.1/24
+78.78.00100001.00000001/24 = 78.78.33.1/24
+78.78.00100010.00000001/24 = 78.78.34.1/24
+78.78.00100011.00000001/24 = 78.78.35.1/24
+Ultima adresă asignabilă din cadrul fiecărei subrețele va fi, respectiv:
+78.78.00100000.11111110/24 = 78.78.32.254/24
+78.78.00100001.11111110/24 = 78.78.33.254/24
+78.78.00100010.11111110/24 = 78.78.34.254/24
+78.78.00100011.11111110/24 = 78.78.35.254/24
